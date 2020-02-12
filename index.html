@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <link rel="stylesheet" href="style.css">
-    <script defer src = "script.js"></script>
+    <script defer src="script.js"></script>
     <!--<link rel="stylesheet" href="node_modules/bulma/css/bulma.css">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <title>Document</title>
@@ -16,43 +16,151 @@
     <!--navbar header-->
     <!--main-->
     <!--footer-->
-    <h1 class="p1">This is my index file</h1>
-    <section>
-        <button onclick="myFunc()">
-        press me to see apples!
-        </button>
-        <div id="apples">
-    
+    <nav class="nav nav-display">
+        <div class="nav-left">
+            <a class="nav-item">
+
+                <!--<img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">-->
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-github"></i>
+                </span>
+            </a>
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-twitter"></i>
+                </span>
+            </a>
+        </div>
+
+        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+        <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+
+        <!-- This "nav-menu" is hidden on mobile -->
+        <!-- Add the modifier "is-active" to display it on mobile -->
+        <div class="nav-right nav-menu">
+            <a class="nav-item p1">
+                Recipes
+            </a>
+            <a class="nav-item p1">
+                Fruit and Veggie Facts
+            </a>
+            <a class="nav-item p1">
+                What is Half your Plate?
+            </a>
+
+            
+        </div>
+    </nav>
+    <span class="display-3">
+        <h1 class="p1">This is my index file</h1>
+        <section>
+            <button onclick="myFunc()">
+                press me to see apples!
+            </button>
+            <div id="apples">
+
+            </div>
+        </section>
+    </span>
+    <section class="hero " style="background:floralwhite">
+        <div class="hero-body">
+            <div class="container">
+                <!--  <p style="background-color: blue"> -->
+                <h1 class="title" style="color:green">
+                    Fruits and Veggies
+                </h1>
+                <h2 class="subtitle" style="color:green">
+                    by Half your plate,California
+                </h2>
+                <h2 style="color:green"><a class="p1"
+                        href="https://www.halfyourplate.ca/fruits-and-veggies/fruits-a-z/">Click
+                        here to go to
+                        website
+                    </a></h2>
+                <!--  </p> -->
+            </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <p>
-                    <Strong>Fruits and Veggies</Strong> by Half your plate,California <a
-                        href="https://www.halfyourplate.ca/fruits-and-veggies/fruits-a-z/">Click here to go to website
-                    </a>
-                </p>
-                <p>
-                    <a link href="https://www.halfyourplate.ca/fruits-and-veggies/veggies-a-z/">VEGGIE INFORMATION </a>
-                </p>
+    </span>
+    </div>
 
-                <p> <a link href="https://www.halfyourplate.ca/fruits-and-veggies/fruits-a-z/">FRUIT INFORMATION</a>
-                </p>
-                <p>
-                    Best Fruit of the Month        
-                           
-                  </p>
-                <P>
-                    Best Veggie of the
-                    Month<a link href="https://www.halfyourplate.ca/veggies/parsnip/"><Strong>        Click here</Strong></a>
 
-                </p>
+
+    <div class="container is-fluid display-3">
+
+        <!--<div class="display-3">
+        This container is <strong>fluid</strong>: it will have a 20px gap on either side, on any viewport size.
+      </div> -->
+
+        <div class="row">
+
+            <div class="columns">
+                <div class="column">
+
+                    <p><strong>VEGGIE INFORMATION</strong></p>
+                    <img class="imgc" src="Resources/tomato.jpg">
+                    <p style="color:green">Veggies help keep your digestive system regular.
+                        help keep your bones strong.
+                        are generally low in calories and fat and rich in fibre so they can help you maintain a healthy
+                        weight.
+                        are full of important nutrients like vitamins A and C, folate and minerals like potassium and
+                        magnesium as well as fibre.
+                        are good for everyone!</p>
+                    <a link
+                        href="https://www.halfyourplate.ca/fruits-and-veggies/veggies-a-z/">Click
+                        here</a>
+
+                </div>
+                <div class="column">
+                    <p><strong>FRUIT INFORMATION</Strong></p>
+                    <img class="imgc" src="REsources/orange.jpg">
+                    <p style="color:green">Fruits are my all time favourite. They are delicious and nutritious gift of
+                        nature having many
+                        varieties and different tastes. They can be found in every colour of rainbow. As far as I can
+                        recall, I don’t remember even a single day of mine going without eating any fruit. They are
+                        loaded with vitamins, minerals and dietary fibers which makes them a natural medicine. Their
+                        consumption is not only essential for the health and maintenance of body but they actually
+                        make your skin look radiant, young and glowing as fruits are full of anti-oxidants. </p>
+                    <a link href="https://www.halfyourplate.ca/fruits-and-veggies/fruits-a-z/">Click
+                        here</a>
+                </div>
+
             </div>
 
         </div>
 
-    </footer>
+
+    </div>
+
+    <footer class="myfooter">
+        <div class="container">
+            <div class="content has-text-centered">
+                <div class="columns">
+                    <div class="column">
+                        <p> Best fruit of the month.<a href="https://www.halfyourplate.ca/fruits/mango/">Click
+                            here.</a></p>
+                    </div>
+                    <div class="column">
+                        <p> Best Veggie of the month.</h2><a href="https://www.halfyourplate.ca/veggies/parsnip/">Click
+                            here.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </footer> 
+
+
+
 </body>
 
 </html>
