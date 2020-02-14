@@ -1,18 +1,15 @@
 const myFunc = () => {
     //fetch('https://still-thicket-63557.herokuapp.com/data', { //restful endpoint
-    fetch('https://still-thicket-63557.herokuapp.com/fruits/type')
+    //fetch('https://still-thicket-63557.herokuapp.com/fruits/type')
+    fetch('http://localhost:3008/fruits/type')
     .then(response => response.json())
   //.then(json => console.log(json))
-   // .then(json => document.getElementById("apples").innerHTML = `there are ${json.amount} ${json.name}`)
-    .then(json => document.getElementById("fruits").innerHTML = `there are ${json.type} ${json.name}`)
+  //  .then(json => document.getElementById("apples").innerHTML = `there are ${json[0].name} ${json[0].type}`)
+   .then(json => document.getElementById("fruits").innerHTML = `there are ${json[0].type} ${json[0].name}`)
 
 }
 
-//  const myNewFunc = () => {
-//   fetch('https://still-thicket-63557.herokuapp.com/hi')
-//    .then(response => response.json())
-//  .then(json => document.getElementById().innerHTML = `says hi`)
-//    }
+// 
 //        let elt = document.getElementById()
 //  const mouseFunc= () => {
 //        elt.addEventListener('click',(event) => console.log("You have clicked the mouse"))   
@@ -20,7 +17,7 @@ const myFunc = () => {
 const otherFunc = () => {
 
 
-  fetch('http://localhost:3000/data')
+  fetch('http://localhost:3008/data')
     .then(r => r.json())
     .then(data => console.log(data))
 
@@ -32,7 +29,7 @@ const otherFunc = () => {
   // this creates a new object with the name value being my input 
   let newApple = { name: `${input}` }
   console.log(newApple)
-  fetch('http://localhost:3000', {
+  fetch('http://localhost:3008', {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',
