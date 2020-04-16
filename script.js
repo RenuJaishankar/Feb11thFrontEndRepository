@@ -1,7 +1,7 @@
 const myFunc = () => {
     //fetch('https://still-thicket-63557.herokuapp.com/data', { //restful endpoint
-    //fetch('https://still-thicket-63557.herokuapp.com/fruits/type')
-    fetch('http://localhost:3008/fruits/type')
+    fetch('https://still-thicket-63557.herokuapp.com/fruits/type')
+    //fetch('http://localhost:3008/fruits/type')
     .then(response => response.json())
   //.then(json => console.log(json))
   //  .then(json => document.getElementById("apples").innerHTML = `there are ${json[0].name} ${json[0].type}`)
@@ -16,8 +16,8 @@ const myFunc = () => {
 //  }
 const otherFunc = () => {
 
-
-  fetch('http://localhost:3008/data')
+  fetch('https://still-thicket-63557.herokuapp.com/data')
+  //fetch('http://localhost:3008/data')
     .then(r => r.json())
     .then(data => console.log(data))
 
@@ -29,7 +29,8 @@ const otherFunc = () => {
   // this creates a new object with the name value being my input 
   let newApple = { name: `${input}` }
   console.log(newApple)
-  fetch('http://localhost:3008', {
+  fetch('https://still-thicket-63557.herokuapp.com', {
+  //fetch('http://localhost:3008', {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',
